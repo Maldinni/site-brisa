@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Residência em TIC na UEMA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="bg-[url(/assets/primeiro_fundo.png)] bg-cover bg-center">
+        <header class="text-white p-4">
+            <div class="container mx-auto px-4 max-w-4xl flex flex-col md:flex-row justify-between items-center">
+                <img src="assets/Brasao_UEMA_horizontal_negativo.png" alt="Realização" class="max-h-16 md:max-h-20 mb-4 md:mb-0">
+                <nav class="w-full md:w-auto">
+                    <!-- Menu Mobile -->
+                    <div class="md:hidden flex justify-end">
+                        <button id="menu-btn" class="text-white text-2xl">☰</button>
+                    </div>
+                    <!-- Menu Desktop -->
+                    <ul id="menu" class="hidden md:flex space-x-0 md:space-x-6 flex-col md:flex-row space-y-2 md:space-y-0 mt-4 md:mt-0">
+                        <li><a href="#inicio" class="font-bold hover:underline block py-1">Início</a></li>
+                        <li><a href="#residencia" class="hover:underline block py-1">A Residência em TIC</a></li>
+                        <li><a href="#como_funciona" class="hover:underline block py-1">Como funciona</a></li>
+                        <li><a href="#beneficios" class="hover:underline block py-1">Benefícios</a></li>
+                        <li><a href="#realizacao" class="hover:underline block py-1">Realização</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="py-4 md:py-8 px-4" id="inicio">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl md:text-6xl font-bold text-white mb-4 md:mb-8 text-left">
+                    Conecte-se ao futuro da tecnologia com o Programa Residência em TIC. Uma oportunidade única de ingressar no mercado e impulsionar sua carreira.</h2>
+                <p class="text-base md:text-xl text-white mb-4 md:mb-8 text-left max-w-full md:max-w-xl">Participando do Programa, você receberá uma bolsa mensal de estudo, um notebook em comodato e a oportunidade de desenvolver projetos para empresas, alinhada às principais soft skills essenciais para o profissional do futuro.</p>
+                <p class="text-base md:text-xl text-white mb-4 md:mb-8 text-left max-w-full md:max-w-xl">A UEMA e a Brisa se uniram para impulsionar a sua carreira em tecnologia! O projeto <strong>Residência em TIC 16 — com recursos do Ministério da Ciência, Tecnologia e Inovações (MCTI)</strong> é a oportunidade que você esperava para se tornar um profissional de destaque no mercado de São Luís e região.</p>
+                <div class="text-left">
+                    <a href="https://inscricoesrestic.brisabr.com.br/login" target="_blank" rel="noopener noreferrer" class="inline-block">
+                    <button class="bg-blue-0 border-2 md:border-4 text-white px-4 py-2 md:px-6 md:py-3 mb-4 md:mb-9 rounded-full hover:bg-blue-500 transition text-sm md:text-base">Inscreva-se na residência</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="py-10 md:py-20 px-4" id="residencia">
+        <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-6 md:mb-8 text-left">Sobre o Programa</h2>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8 items-start">
+                <div class="flex-1">
+                    <p class="text-sm md:text-base text-gray-600 mb-4 md:mb-8 text-left">O Programa é a união de esforços de instituições que fomentam a tecnologia, inovação e empreendedorismo no cenário nacional: Universidade Estadual do Maranhão, Brisa, Softex, Marandu e com recurso do Governo Federal destinado ao Maranhão. O objetivo principal é formar profissionais qualificados em programação avançada para atender às demandas do mercado de São Luís e região.</p>
+                    <p class="text-sm md:text-base text-gray-600 mb-4 md:mb-8 text-left">Projeto <strong>Residência em TIC 16 — com recursos do Ministério da Ciência, Tecnologia e Inovações (MCTI)</strong>, apoiado pelo Ministério da Ciência, Tecnologia e Inovações, com recursos da Lei nº 8.248, de 23 de outubro de 1991.</p>
+                    <div class="text-left">
+                        <a href="https://inscricoesrestic.brisabr.com.br/login" target="_blank" rel="noopener noreferrer" class="inline-block">
+                        <button class="bg-blue-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-blue-700 transition text-sm md:text-base">Inscreva-se na residência</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 w-full md:w-auto mt-4 md:mt-0">
+                    <img src="/assets/imagem_spg.jpeg" class="w-full min-h-[200px] md:min-h-[300px] rounded-xl md:rounded-3xl object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient-to-r from-blue-500 to-blue-800 relative md:pb-20" id="como_funciona">
+        <div class="container mx-auto max-w-4xl relative">
+            <img src="/assets/fundo_RES_HD.png" class="w-full opacity-70">
+            <p class="absolute text-[0.5rem] md:text-base text-white text-right md:pt-2 md:pr-8 px-1 top-0 right-0 drop-shadow-lg">exemplouema.com/residenciaemtic</p>
+            <p class="absolute text-lg md:text-3xl text-white text-left pb-16 md:pb-36 md:pl-8 px-1 bottom-0 left-0">PROGRAMA DE</p>
+            <p class="absolute text-3xl md:text-7xl font-bold text-white text-left pb-10 md:pb-20 md:pl-7 px-1 bottom-0 left-0">Residência em TIC</p>
+            <div class="bg-blue-50 rounded-r-full absolute p-5 md:p-12 -bottom-2 md:-bottom-10 md:left-0  w-4/5 max-w-full md:w-full md:max-w-3xl z-10">
+                <p class="absolute text-xs md:text-[32px] font-bold text-blue-400 text-left pt-3 md:pt-8 pl-5 md:pl-8 inset-0">INSCRIÇÕES DE <span class="text-blue-800">25/02</span> ATÉ <span class="text-blue-800">26/03</span> DE 2025.</p>
+                <img src="assets/alert.png" class="absolute bottom-1 md:bottom-3 -right-8 md:-right-20 w-16 md:w-auto">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-full md:max-w-3xl mt-8 md:mt-24">
+            <div class="bg-blue-400 rounded-full md:rounded-r-full p-2 md:p-2 relative mx-0 md:mx-0 md:h-[132px] md:max-h-[132px]">     
+            <h3 class="text-md md:text-3xl font-bold text-white md:text-white mb-0 md:mb-0 md:absolute md:bottom-12 md:left-20 px-8"><span class="text-blue-800">1.</span> Seleção</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="hidden md:block md:w-1/3"></div>
+                    <div class="md:w-2/3">
+                        <p class="text-[0.7rem] md:text-base text-white leading-tight md:leading-none mb-2 md:ml-4 px-8 md:px-8">
+                            Serão selecionados <strong>250 alunos</strong> para a primeira fase do Programa. Podem participar: <strong>candidatos residentes nas cidades de São Luís e região metropolitana, Bacabal, Balsas e demais citadas no edital</strong>, sendo graduados ou graduandos em cursos de áreas tecnológicas ou ciências exatas, segundo grau completo e técnico de nível médio completo.
+                        </p>
+                    </div>
+                </div>
+                <img src="assets/mulher_lendo.png" 
+                     alt="Processo de seleção"
+                     class="hidden md:block absolute rounded-l-3xl bottom-0 -left-10 w-1/4">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-full md:max-w-3xl mt-8 md:mt-8">
+            <div class="bg-blue-900 rounded-full md:rounded-r-full p-2 md:p-2 relative mx-0 md:mx-0 md:h-[132px] md:max-h-[132px]">     
+            <h3 class="text-md md:text-3xl font-bold text-white md:text-white mb-0 md:mb-0 md:absolute md:bottom-12 md:left-5 px-8"><span class="text-blue-400">2.</span> Nivelamento</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="hidden md:block md:w-2/5"></div>
+                    <div class="md:w-3/5">
+                        <p class="text-[0.7rem] md:text-base text-white leading-tight md:leading-none mb-2 md:mt-2 md:mr-40 px-8 md:px-0">Nesta fase, 250 alunos participam de aulas sobre Computação Básica. As aulas são 100% on-line, com o apoio de professores e monitores.</p>
+                    </div>
+                </div>
+                <img src="assets/prancheta_info.png" 
+                     alt="Processo de seleção"
+                     class="hidden md:block absolute rounded-r-full -bottom-0 right-0 w-1/10">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-full md:max-w-3xl mt-8 md:mt-8">
+            <div class="bg-blue-400 rounded-full md:rounded-r-full p-2 md:p-2 relative mx-0 md:mx-0 md:h-[132px] md:max-h-[132px]">     
+            <h3 class="text-md md:text-3xl font-bold text-white md:text-white mb-0 md:mb-0 md:absolute md:bottom-12 md:right-5 px-8"><span class="text-blue-800">3.</span> Classificação</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="hidden md:block md:w-1/6"></div>
+                    <div class="md:w-4/6">
+                        <p class="text-[0.7rem] md:text-base text-white leading-tight md:leading-none mb-2 md:mt-2 md:mr-40 px-8 md:px-0">50 alunos com melhor desempenho na etapa de nivelamento são classificados para a etapa de imersão. Nessa etapa, os alunos receberão uma bolsa mensal de <strong>R$ 1.260,00 durante 6 meses e um notebook em comodato.</strong></p>
+                    </div>
+                    <div class="hidden md:block md:w-1/6"></div>
+                </div>
+                <img src="assets/hug_info.png" 
+                     alt="Processo de seleção"
+                     class="hidden md:block absolute rounded-l-full -bottom-0 -left-9 w-1/10">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-full md:max-w-3xl mt-8 md:mt-8">
+            <div class="bg-blue-900 rounded-full md:rounded-r-full p-2 md:p-2 relative mx-0 md:mx-0 md:h-[132px] md:max-h-[132px]">     
+            <h3 class="text-md md:text-3xl font-bold text-white md:text-white mb-0 md:mb-0 md:absolute md:bottom-12 md:left-5 px-8"><span class="text-blue-400">4.</span> Imersão</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="hidden md:block md:w-1/4"></div>
+                    <div class="md:w-3/4">
+                        <p class="text-[0.7rem] md:text-base text-white leading-tight md:leading-none mb-2 md:mt-6 md:mr-48 px-8 md:px-10">Na imersão, os alunos trabalham em equipe para o desenvolvimento de soluções computacionais para problemas reais do mercado.</p>
+                    </div>
+                </div>
+                <img src="assets/homem_notebook_info.png" 
+                     alt="Processo de seleção"
+                     class="hidden md:block absolute rounded-full -bottom-3.5 -right-5 w-1/3">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-full md:max-w-3xl mt-8 md:mt-8 pb-8 md:pb-9">
+            <div class="bg-blue-400 rounded-full md:rounded-r-full p-2 md:p-2 relative mx-0 md:mx-0 md:h-[132px] md:max-h-[132px]">     
+            <h3 class="text-md md:text-3xl font-bold text-white md:text-white mb-0 md:mb-0 md:absolute md:bottom-12 md:left-20 px-8"><span class="text-blue-800">5.</span> Resultados</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="hidden md:block md:w-1/3"></div>
+                    <div class="md:w-2/3">
+                        <p class="text-[0.7rem] md:text-base text-white leading-tight md:leading-none mb-2 md:mt-8 md:ml-20 px-8 md:px-0">Ao final do curso, os alunos são apresentados a uma banca avaliadora e podem ser aprovados para o desenvolvimento de novos negócios.</p>
+                    </div>
+                </div>
+                <img src="assets/homem_terno_info.png" 
+                     alt="Processo de seleção"
+                     class="hidden md:block absolute rounded-l-full bottom-0 -left-9 w-1/8">
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="https://inscricoesrestic.brisabr.com.br/login" target="_blank" rel="noopener noreferrer" class="inline-block">
+            <button class="bg-white text-blue-600 px-2 py-2 md:px-6 md:py-3 md:mb-0 rounded-full hover:bg-blue-500 hover:text-white transition text-xs md:text-base">Quero me inscrever</button>
+            </a>
+            <a href="https://www.uema.br/wp-content/uploads/2025/02/Edita-2025-11-GR_UEMA_Residencia_em_TIC_16UEMA_e_BRISA.pdf" target="_blank" rel="noopener noreferrer" class="inline-block">
+            <button class="bg-orange-400 text-white px-2 py-2 md:px-6 md:py-3 md:ml-1 mb-14 md:mb-0 rounded-full hover:bg-orange-600 transition text-xs md:text-base">Baixar edital</button>
+            </a>
+        </div>
+
+    </section>
+        
+    <section class="py-8 md:py-6 px-4">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h5 class="text-xl md:text-3xl font-bold text-gray-800 md:mt-4 mb-2 md:mb-2 text-center">Características do Programa</h5>
+                <p class="text-sm md:text-base text-gray-600 mb-6 md:mb-6 text-center">Aprenda na prática, conecte-se com o mercado e veja sua carreira decolar. Invista no seu futuro em tecnologia. </p>
+                <h6 class="md:text-2xl font-bold text-blue-500 mb-4 md:mb-2 text-left">Quem pode participar</h6>
+                <div class="flex flex-col md:flex-row gap-4 md:gap-8 items-start">
+                    <div class="flex-1">
+                        <p class="md:text-base text-gray-600 mb-4 md:mb-4 text-left">São elegíveis a participar do programa candidatos(as) residentes nas cidades de São Luís e região metropolitana, Bacabal, Balsas e demais citadas no edital; </p>
+                        <p class="md:text-base text-gray-600 mb-4 md:mb-4 text-left">Graduados ou graduandos em cursos das áreas tecnológicas ou ciências exatas (engenharias, computação, física, matemática, química etc.), seja tecnólogo, bacharelado ou licenciatura; </p>
+                        <p class="md:text-base text-gray-600 mb-8 md:mb-8 text-left">Formados no ensino médio; Formados em cursos técnicos de nível médio em ciências exatas.</p>
+                        <h6 class="md:text-2xl font-bold text-blue-500 mb-4 md:mb-2 text-left">Fases do Programa</h6>
+                        <p class="md:text-base text-gray-600 mb-4 md:mb-4 text-left">O curso será dividido em duas fases:</p>
+                        <p class="md:text-base text-gray-600 mb-4 md:mb-4 text-left">Primeira fase: Nivelamento em Computação Básica, com duração de 2 meses, na modalidade EAD. Nessa fase, serão selecionados 250 participantes.</p>
+                        <p class="md:text-base text-gray-600 mb-8 md:mb-8 text-left">Segunda fase: Imersão em Computação Avançada (híbrido, com um dia da semana presencial no campus da Ulbra Canoas). Dos 250 alunos que realizarem a etapa de Nivelamento em Computação Básica, serão selecionados 50 alunos para a etapa de Imersão em Computação Avançada.</p>
+                    </div>
+                    <div class="flex-1 w-full md:w-auto mt-4 md:mt-0">
+                        <img src="/assets/imagem_cpg.jpg" class="w-full min-h-[200px] md:min-h-[300px] rounded-xl md:rounded-3xl object-cover">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div class="bg-[url(/assets/fundo_publi_colorido.png)] bg-cover bg-center">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h5 class="md:text-5xl text-2xl font-bold text-white md:pt-20 pt-12 md:mb-8 mb-4 text-center">Publicações Oficiais</h5>
+            </div>
+            <div class="text-center">
+                <a href="https://www.uema.br/wp-content/uploads/2025/02/Edita-2025-11-GR_UEMA_Residencia_em_TIC_16UEMA_e_BRISA.pdf" target="_blank" rel="noopener noreferrer" class="inline-block">
+                <button class="bg-orange-400 text-white px-2 py-2 md:px-6 md:py-3 mb-2 rounded-full hover:bg-orange-600 transition text-xs md:text-base">Baixar edital</button>
+                </a>
+                <button class="bg-blue-600 text-white px-2 py-2 md:px-6 md:py-3 md:ml-5 md:mb-28 mb-20 rounded-full hover:bg-blue-700 transition text-xs md:text-base">Selecionados Para Etapa de Nivelamento</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-8 md:py-6 px-4" id="beneficios">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h5 class="text-xl md:text-3xl font-bold text-gray-800 md:mt-4 mb-4 md:mb-8 text-center">Invista no seu futuro e faça a diferença na sua região</h5>
+            <p class="text-sm md:text-base text-gray-600 mb-4 md:mb-12 text-center">Não perca tempo! As inscrições estão abertas e você pode ser o próximo talento a transformar a sua carreira e a impulsionar o mercado de tecnologia em São Luís e Região.</p>
+            <h5 class="text-xl md:text-3xl font-bold text-gray-800 md:mt-4 mb-4 md:mb-4 text-center">Benefícios</h5>
+            <p class="text-sm md:text-base text-gray-600 md:mb-6 text-center">Os candidatos que passarem para a fase de imersão receberão uma bolsa mensal, um notebook, um certificado, projetos práticos e desenvolvimento com empresas locais. Além disso, o projeto também visa o desenvolvimento de soft skills dos alunos para o empreendedorismo e a inovação, com o apoio de professores qualificados e de programas da Universidade Estadual do Maranhão - UEMA.</p>
+        </div>
+
+        <div class="container mx-auto px-4 max-w-4xl md:mb-4">
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/info_box_1.png" class="w-full aspect-square object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/info_box_2.png" class="w-full aspect-square object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/info_box_3.png" class="w-full aspect-square object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/info_box_4.png" class="w-full aspect-square object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/info_box_5.png" class="w-full aspect-square object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/info_box_6.png" class="w-full aspect-square object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/info_box_7.png" class="w-full aspect-square object-cover rounded-lg">
+                </div>
+            </div>
+            
+            <!-- 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+                -->
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a href="https://inscricoesrestic.brisabr.com.br/login" target="_blank" rel="noopener noreferrer" class="inline-block">
+            <button class="bg-blue-600 text-white px-2 py-2 md:px-6 md:py-3 mb-2 rounded-full hover:bg-blue-700 transition text-xs md:text-base">Quero me inscrever</button>
+            </a>
+            <a href="https://www.uema.br/wp-content/uploads/2025/02/Edita-2025-11-GR_UEMA_Residencia_em_TIC_16UEMA_e_BRISA.pdf" target="_blank" rel="noopener noreferrer" class="inline-block">
+            <button class="bg-orange-400 text-white px-2 py-2 md:px-6 md:py-3 ml-2 md:ml-5 mb-2 md:mb-16 rounded-full hover:bg-orange-600 transition text-xs md:text-base">Baixar edital</button>
+            </a>
+        </div>
+    </section>
+
+    <footer class="text-black text-center pt-8 md:pt-8">
+        <section id="realizacao">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h3 class="text-xl md:text-3xl font-bold text-gray-800 mb-4 pt-4 text-center">Realização</h3>
+            </div>
+            <div class="container mx-auto px-4 max-w-6xl flex justify-center pt-4 md:pt-8 pb-4 md:pb-8">
+                <img src="assets/Realizacao.png" alt="Realização" class="max-h-16 md:max-h-20">
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto px-4 max-w-6xl">
+                <h3 class="text-xl md:text-3xl font-bold text-gray-800 pt-4 text-center">Apoio</h3>
+            </div>
+            <div class="container mx-auto px-4 max-w-6xl flex justify-center pb-4 md:pb-8">
+                <img src="assets/apoio_footer.png" alt="Apoio" class="max-h-48 md:max-h-48">
+            </div>
+        </section>
+        <section class="bg-gray-600">
+            <div class="container mx-auto px-4 max-w-6xl">
+                <p class="text-base md:text-xl text-white p-2 md:p-4 text-center">© 2024 Universidade Estadual do Maranhão. Todos os direitos reservados.</p>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        // Menu mobile
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Slider
+        const swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            },
+
+            //navigation: {
+            //    nextEl: '.swiper-button-next',
+            //    prevEl: '.swiper-button-prev',
+            //},
+
+            grabCursor: true,
+        });
+
+        // Rolagem suavizada
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+      
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

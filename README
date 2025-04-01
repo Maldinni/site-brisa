@@ -1,0 +1,102 @@
+Durante o desenvolvimento deste projeto de página web para o Programa Residência em TIC da UEMA, tive a oportunidade de aprofundar meus conhecimentos em Tailwind CSS, uma utility-first CSS framework que se mostrou extremamente poderosa e versátil. Este relatório detalha minha jornada de aprendizado, desafios enfrentados e soluções encontradas.
+
+Tailwind CSS
+
+1. Benefícios da tecnologia
+A documentação oficial do Tailwind foi minha principal referência, especialmente para entender como aplicar estilos diretamente no HTML através de classes utilitárias.
+
+Além disso, a abordagem utility-first acelerou significativamente meu fluxo de trabalho, eliminando a necessidade de alternar entre arquivos CSS e HTML.
+
+2. Responsividade Integrada
+Prefixos responsivos: Aprendi a usar prefixos como md: e sm: para criar designs responsivos sem escrever media queries manualmente.
+
+Breakpoints personalizáveis: Explorei como ajustar os breakpoints padrão para melhor atender ao projeto.
+
+3. Espaçamento e Layout
+Passei a entender o uso de p-, m-, gap- e outras classes para controle preciso de padding e margin.
+
+Ademais, utilizei extensivamente flex, flex-col, flex-row, grid e outras classes para criar layouts complexos.
+
+4. Cores e Temas
+Aproveitei o sistema de cores padrão do Tailwind para produzir o site na paleta que foi solicitada.
+
+Implementei gradientes com classes como bg-gradient-to-r combinadas com classes de cor.
+
+5. Posicionamento Avançado
+Um dos atributos que demorei um pouco mais para compreender foram relative, absolute e inset- para posicionar elementos de forma precisa.
+
+Z-index: Gerenciei camadas com z-10, z-20, etc.
+
+Desafios e Soluções
+1. Seção "Como Funciona" (como_funciona)
+Complexidade: Esta seção foi a mais desafiadora devido aos requisitos de design que incluíam:
+
+Imagem de fundo com texto sobreposto
+
+Elementos posicionados absolutamente em diferentes breakpoints
+
+Cards com cantos arredondados assimétricos
+
+Layout responsivo que mantivesse a proporção em diferentes telas
+
+Dificuldades específicas:
+
+Posicionamento absoluto responsivo: Encontrar a combinação certa de classes para manter o posicionamento consistente em diferentes tamanhos de tela.
+
+Solução: Usei uma combinação de md:absolute, md:bottom-, md:left-, etc., com ajustes específicos para cada elemento.
+
+Arredondamento assimétrico: Criar cards com apenas um lado arredondado.
+
+Solução: Descobri as classes rounded-r-full e rounded-l-full na documentação.
+
+Sobreposição de elementos: Garantir que textos ficassem legíveis sobre a imagem de fundo.
+
+Solução: Usei drop-shadow-lg para texto e ajustei a opacidade da imagem com opacity-70.
+
+Alinhamento vertical: Manter o alinhamento consistente dos elementos internos dos cards.
+
+Solução: Combinei flex com items-center e justify-center onde necessário.
+
+Tempo dedicado: Esta seção consumiu aproximadamente 40% do tempo total de desenvolvimento, com vários ciclos de ajuste fino.
+
+2. Problemas de Posicionamento de Containers
+Desafios:
+
+Containers que não se alinhavam como esperado em breakpoints específicos
+
+Margens indesejadas em determinadas resoluções
+
+Conteúdo que ultrapassava os limites em mobile
+
+Soluções:
+
+Uso sistemático de mx-auto para centralização
+
+Combinação de max-w- e w-full para controle de largura
+
+Ajustes específicos com md:max-w- para diferentes breakpoints
+
+Testes extensivos no Chrome DevTools com o recurso de dispositivo móvel
+
+3. Responsividade para Diversas Telas
+Estratégias adotadas:
+
+Mobile-first: Comecei projetando para mobile e depois adicionei estilos para telas maiores com prefixos md:.
+
+Testes contínuos: Usei extensivamente o modo responsivo do navegador e dispositivos reais para validar.
+
+Classes condicionais: Implementei lógicas como hidden md:block para mostrar/ocultar elementos conforme necessário.
+
+Tamanhos flexíveis: Preferi min-h- em vez de h- fixo para permitir crescimento do conteúdo.
+
+Conclusão
+O desenvolvimento deste projeto foi uma experiência extremamente valiosa para meu aprendizado com Tailwind CSS. A documentação oficial provou ser um recurso indispensável, cobrindo desde conceitos básicos até técnicas avançadas.
+
+A seção "Como Funciona" foi particularmente desafiadora, mas também a mais gratificante, pois me forçou a explorar recursos avançados de posicionamento e responsividade. Os problemas com containers e layout me ensinaram a importância de uma estrutura HTML bem planejada como base para o styling com Tailwind.
+
+A abordagem utility-first do Tailwind mostrou-se poderosa, oferecendo um excelente equilíbrio entre flexibilidade e produtividade. Embora tenha uma curva de aprendizado inicial, especialmente para desenvolvedores acostumados com CSS tradicional, os ganhos em velocidade de desenvolvimento e consistência visual são significativos.
+
+Recomendo fortemente o Tailwind CSS para projetos que exigem rápido desenvolvimento sem sacrificar a qualidade do design, especialmente quando combinado com um sistema de design bem definido e testes rigorosos de responsividade.
+
+Por fim, tomei a liberdade para adaptar as informaçãoes para adequar com a Residência em TIC - 16 no Maranhão, alterando o original do Rio Grande do Sul utilizando informações
+oficiais diretamentes retiradas do edital postado no site da Universidade Estadual do Maranhão.
